@@ -97,7 +97,11 @@ section{
     width: 98%;
     box-sizing: border-box;
     padding: 2rem 0;
-}
+  }
+
+  .mat-elevation-z15{
+  box-shadow: none;
+  }
 
   small{
     font-weight: normal;

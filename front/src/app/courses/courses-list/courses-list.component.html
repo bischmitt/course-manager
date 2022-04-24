@@ -1,46 +1,14 @@
 <main class="">
   <h1 class="text-center py-4">Course List </h1>
-  
+
+  <div class="d-flex m-auto justify-content-center">
+    <mat-form-field appearance="outline" class="py-2">
+      <mat-label>Filter By</mat-label>
+      <input matInput [(ngModel)]="filter" placeholder="Ex. Angular Course...">
+    </mat-form-field>
+  </div>
+
   <section class="" style="overflow-x: auto;">
-    <div class="d-flex m-auto justify-content-center">
-      <mat-form-field appearance="outline" class="py-2">
-        <mat-label>Filter By</mat-label>
-        <input matInput [(ngModel)]="filter" placeholder="Ex. Angular Course...">
-      </mat-form-field>
-    </div>
-
-    <!-- <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Nome</th>
-      <th>Code</th>
-      <th>Preço</th>
-      <th>Notas</th>
-      <th>Data de Inicio</th>
-      <th>Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let course of filterCourses">
-      <td><img [src]="course.imgUrl" alt="" /></td>
-      <td>{{ course.name }}</td>
-      <td>{{ course.code | lowercase | replacePipe: "-":" " }}</td>
-      <td>{{ course.price }}</td>
-      <td>
-        <app-star [rating]="course.rating"></app-star>
-      </td>
-      <td>{{ course.releaseDate | date: "dd/MM/yyyy" }}</td>
-      <td>
-        <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary me-2">Editar</a>
-        <button (click)="deleteById(course.id)" class="btn btn-danger">
-          Delete
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table> -->
-
     <table mat-table [dataSource]="filterCourses" color="primary">
       <!-- Id Column -->
       <ng-container matColumnDef="id">
