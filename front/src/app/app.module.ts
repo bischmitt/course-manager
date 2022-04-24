@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesModule } from './courses/courses.module';
 import { NavBarComponent } from './courses/nav-bar/nav-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './shared/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NavBarComponent } from './courses/nav-bar/nav-bar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CoursesModule
+    CoursesModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

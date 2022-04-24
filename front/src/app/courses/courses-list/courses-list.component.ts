@@ -9,6 +9,18 @@ import { CourseServiceService } from 'src/app/service/course-service.service';
 })
 export class CoursesListComponent implements OnInit {
 
+  displayedColumns = [
+    'id',
+    'name',
+    'imageUrl',
+    'price',
+    'code',
+    'duration',
+    'rating',
+    'releaseDate',
+    'action'
+  ];
+
   courses: Course[] = [];
 
   filterCourses: Course[] = [];
