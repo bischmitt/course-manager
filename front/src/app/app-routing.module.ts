@@ -6,7 +6,7 @@ import { Erro404Component } from './404/erro404.component';
 const routes: Routes = [
   {path:'', redirectTo: 'courses', pathMatch: 'full'},
 
-  // {path:'**', component: Erro404Component}
+  //{path:'**', component: Erro404Component}
 ];
 
 @NgModule({
