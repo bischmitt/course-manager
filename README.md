@@ -5,6 +5,7 @@
 <p>Creation of a course management system in Angular where you can edit and delete them. The data is mocked on a nodejs server.</p>
 
 <h3>Project Images</h3>
+
 <h4>Course List<h4>
   <img src='front/src/assets/img/README-images/course-manager.png'>
 
@@ -15,14 +16,10 @@
   <img src='front/src/assets/img/README-images/course-manager-edit.png'>
 
 <h3>Instructions</h3>
-<p>In the back folder, install the packages with the command:</p>
-<p>npm install</p>
-<p>Too run the server:</p>
-<p>node server.js</p>
+<p>In the back folder, install the packages with the command: npm install</p>
+<p>Too run the server: node server.js</p>
 
-<p>In the front folder, install the packages with the command:</p>
-<p>npm install</p>
-<p>To run Angular:</p>
-<p>ng serve -o</p>
+<p>In the front folder, install the packages with the command: npm install</p>
+<p>To run Angular: ng serve -o</p>
 
 <h5>©Dio 2022 - Bianca Klein Schmitt</h5>
